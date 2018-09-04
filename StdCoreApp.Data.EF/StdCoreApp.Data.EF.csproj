@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Extensitions\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StdCoreApp.Data\StdCoreApp.Data.csproj" />
+    <ProjectReference Include="..\StdCoreApp.Infrastruture\StdCoreApp.Infrastruture.csproj" />
+    <ProjectReference Include="..\StdCoreApp.Utilities\StdCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
