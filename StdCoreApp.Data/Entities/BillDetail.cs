@@ -1,15 +1,14 @@
 ﻿using StdCoreApp.Infrastruture.SharedKernel;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace StdCoreApp.Data.Entities
 {
     [Table("BillDetails")]
     public class BillDetail : DomainEntity<int>
     {
-        public BillDetail() { }
+        public BillDetail()
+        {
+        }
 
         public BillDetail(int id, int billId, int productId, int quantity, decimal price, int colorId, int sizeId)
         {
@@ -31,6 +30,7 @@ namespace StdCoreApp.Data.Entities
             ColorId = colorId;
             SizeId = sizeId;
         }
+
         public int BillId { set; get; }
 
         public int ProductId { set; get; }

@@ -26,7 +26,7 @@ namespace StdCoreApp.Data.EF
         public DbSet<Announcement> Announcements { set; get; }
         public DbSet<AnnouncementUser> AnnouncementUsers { set; get; }
 
-        public DbSet<Blog> Bills { set; get; }
+        public DbSet<Bill> Bills { set; get; }
         public DbSet<BillDetail> BillDetails { set; get; }
         public DbSet<Blog> Blogs { set; get; }
         public DbSet<BlogTag> BlogTags { set; get; }
@@ -73,14 +73,14 @@ namespace StdCoreApp.Data.EF
             #endregion Identity Config
 
             builder.AddConfiguration(new TagConfiguration());
-            //builder.AddConfiguration(new BlogTagConfiguration());
-            //builder.AddConfiguration(new ContactDetailConfiguration());
-            //builder.AddConfiguration(new FooterConfiguration());
-            //builder.AddConfiguration(new PageConfiguration());
-            //builder.AddConfiguration(new FooterConfiguration());
-            //builder.AddConfiguration(new ProductTagConfiguration());
-            //builder.AddConfiguration(new SystemConfigConfiguration());
-            //builder.AddConfiguration(new AdvertistmentPositionConfiguration());
+            builder.AddConfiguration(new BlogTagConfiguration());
+            builder.AddConfiguration(new ContactDetailConfiguration());
+            builder.AddConfiguration(new FooterConfiguration());
+            builder.AddConfiguration(new PageConfiguration());
+            builder.AddConfiguration(new FooterConfiguration());
+            builder.AddConfiguration(new ProductTagConfiguration());
+            builder.AddConfiguration(new SystemConfigConfiguration());
+            builder.AddConfiguration(new AdvertistmentPositionConfiguration());
 
             base.OnModelCreating(builder);
         }

@@ -1,15 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Infrastruture.SharedKernel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace StdCoreApp.Data.EF
 {
-    public class EFRepository<T, K> : //IRepository<T, K>, 
-        IDisposable where T : DomainEntity<K>
+    public class EFRepository<T, K> : IRepository<T, K>, IDisposable where T : DomainEntity<K>
     {
         private readonly AppDbContext _context;
 
