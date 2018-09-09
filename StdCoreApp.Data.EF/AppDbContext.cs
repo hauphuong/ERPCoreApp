@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using StdCoreApp.Data.EF.Configurations;
 using StdCoreApp.Data.EF.Extensitions;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Interfaces;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace StdCoreApp.Data.EF
@@ -57,17 +60,17 @@ namespace StdCoreApp.Data.EF
         {
             #region Identity Config
 
-            builder.Entity<IdentityUserClaim<string>>().ToTable("AppUserClaims").HasKey(x => x.Id);
+            builder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims").HasKey(x => x.Id);
 
-            builder.Entity<IdentityRoleClaim<string>>().ToTable("AppRoleClaims")
+            builder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims")
                 .HasKey(x => x.Id);
 
-            builder.Entity<IdentityUserLogin<string>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+            builder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
 
-            builder.Entity<IdentityUserRole<string>>().ToTable("AppUserRoles")
+            builder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles")
                 .HasKey(x => new { x.RoleId, x.UserId });
 
-            builder.Entity<IdentityUserToken<string>>().ToTable("AppUserTokens")
+            builder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens")
                .HasKey(x => new { x.UserId });
 
             #endregion Identity Config
@@ -81,8 +84,9 @@ namespace StdCoreApp.Data.EF
             builder.AddConfiguration(new ProductTagConfiguration());
             builder.AddConfiguration(new SystemConfigConfiguration());
             builder.AddConfiguration(new AdvertistmentPositionConfiguration());
+            builder.AddConfiguration(new AnnouncementConfiguaration());
 
-            base.OnModelCreating(builder);
+           // base.OnModelCreating(builder);
         }
 
         public override int SaveChanges()
@@ -102,6 +106,20 @@ namespace StdCoreApp.Data.EF
                 }
             }
             return base.SaveChanges();
+        }
+    }
+
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    {
+        public AppDbContext CreateDbContext(string[] args)
+        {
+            IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json").Build();
+            var builder = new DbContextOptionsBuilder<AppDbContext>();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            builder.UseSqlServer(connectionString);
+            return new AppDbContext(builder.Options);
         }
     }
 }
