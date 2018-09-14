@@ -1,0 +1,437 @@
+2018-09-14T21:18:58.0058579+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:19:00.2597211+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:19:00.2873853+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:19:00.3144465+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-09-14T21:19:00.3483952+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-14T21:19:00.3597015+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-09-14T21:19:00.4300557+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-09-14T21:19:00.4959418+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-09-14T21:19:00.5573519+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-09-14T21:19:00.6215777+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-09-14T21:19:00.8084604+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:19:00.8417264+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:19:00.8736013+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:19:01.3190165+07:00 0HLGQ9K28R7G0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2018-09-14T21:19:01.8863635+07:00 0HLGQ9K28R7G0:00000001 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:19:26.6772319+07:00  [WRN] Heartbeat took longer than "00:00:01" at "09/14/2018 14:19:22 +00:00". (439152bf)
+2018-09-14T21:19:31.0086560+07:00 0HLGQ9K28R7G0:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:19:32.0359250+07:00 0HLGQ9K28R7G0:00000001 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 30185.5533ms (afa2e885)
+2018-09-14T21:19:32.0458984+07:00 0HLGQ9K28R7G0:00000001 [INF] Request finished in 30781.5342ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:19:32.1765333+07:00 0HLGQ9K28R7G0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-14T21:19:32.2089322+07:00 0HLGQ9K28R7G1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/css/site.css   (ca22a1cb)
+2018-09-14T21:19:32.2406516+07:00 0HLGQ9K28R7G2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-14T21:19:32.2512371+07:00 0HLGQ9K28R7G0:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-09-14T21:19:32.2568088+07:00 0HLGQ9K28R7G3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/images/banner2.svg   (ca22a1cb)
+2018-09-14T21:19:32.2660051+07:00 0HLGQ9K28R7G1:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-09-14T21:19:32.3154457+07:00 0HLGQ9K28R7G2:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-09-14T21:19:32.3602118+07:00 0HLGQ9K28R7G3:00000001 [INF] The file "/images/banner2.svg" was not modified (f1f8d725)
+2018-09-14T21:19:32.3795817+07:00 0HLGQ9K28R7G0:00000002 [INF] Request finished in 104.2474ms 304 text/css (791a596a)
+2018-09-14T21:19:32.4024268+07:00 0HLGQ9K28R7G3:00000001 [INF] Request finished in 172.535ms 304 image/svg+xml (791a596a)
+2018-09-14T21:19:32.4293144+07:00 0HLGQ9K28R7G4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-09-14T21:19:32.4314126+07:00 0HLGQ9K28R7G2:00000001 [INF] Request finished in 149.667ms 304 application/javascript (791a596a)
+2018-09-14T21:19:32.4399823+07:00 0HLGQ9K28R7G4:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-09-14T21:19:32.4707596+07:00 0HLGQ9K28R7G7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/images/banner1.svg   (ca22a1cb)
+2018-09-14T21:19:32.4742393+07:00 0HLGQ9K28R7G6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/images/banner4.svg   (ca22a1cb)
+2018-09-14T21:19:32.4852180+07:00 0HLGQ9K28R7G6:00000001 [INF] The file "/images/banner4.svg" was not modified (f1f8d725)
+2018-09-14T21:19:32.5042890+07:00 0HLGQ9K28R7G4:00000001 [INF] Request finished in 202.3324ms 304 application/javascript (791a596a)
+2018-09-14T21:19:32.5361026+07:00 0HLGQ9K28R7G5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/images/banner3.svg   (ca22a1cb)
+2018-09-14T21:19:32.5385616+07:00 0HLGQ9K28R7G7:00000001 [INF] The file "/images/banner1.svg" was not modified (f1f8d725)
+2018-09-14T21:19:32.5535134+07:00 0HLGQ9K28R7G7:00000001 [INF] Request finished in 93.9074ms 304 image/svg+xml (791a596a)
+2018-09-14T21:19:32.5562673+07:00 0HLGQ9K28R7G6:00000001 [INF] Request finished in 91.631ms 304 image/svg+xml (791a596a)
+2018-09-14T21:19:32.5601143+07:00 0HLGQ9K28R7G1:00000001 [INF] Request finished in 83.1155ms 304 text/css (791a596a)
+2018-09-14T21:19:32.5694834+07:00 0HLGQ9K28R7G5:00000001 [INF] The file "/images/banner3.svg" was not modified (f1f8d725)
+2018-09-14T21:19:32.6026918+07:00 0HLGQ9K28R7G5:00000001 [INF] Request finished in 109.9205ms 304 image/svg+xml (791a596a)
+2018-09-14T21:19:32.6346383+07:00 0HLGQ9K28R7G8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-09-14T21:19:32.6434416+07:00 0HLGQ9K28R7G8:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-09-14T21:19:32.6525727+07:00 0HLGQ9K28R7G8:00000001 [INF] Request finished in 108.6881ms 304 application/javascript (791a596a)
+2018-09-14T21:19:32.7352985+07:00 0HLGQ9K28R7G0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-09-14T21:19:32.7404511+07:00 0HLGQ9K28R7G0:00000003 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-09-14T21:19:32.8006477+07:00 0HLGQ9K28R7G0:00000003 [INF] Request finished in 10.3695ms 304 font/woff2 (791a596a)
+2018-09-14T21:20:14.2735263+07:00 0HLGQ9K28R7G1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2018-09-14T21:20:14.2957876+07:00 0HLGQ9K28R7G1:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:20:14.9819980+07:00 0HLGQ9K28R7G1:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-14T21:20:15.0835081+07:00 0HLGQ9K28R7G1:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 790.9944ms (afa2e885)
+2018-09-14T21:20:15.1837845+07:00 0HLGQ9K28R7G1:00000002 [INF] Request finished in 820.0179ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:20:15.2929697+07:00 0HLGQ9K28R7G3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-14T21:20:15.3315877+07:00 0HLGQ9K28R7G4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-14T21:20:15.3390811+07:00 0HLGQ9K28R7G7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-09-14T21:20:15.3488065+07:00 0HLGQ9K28R7G5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-09-14T21:20:15.3550473+07:00 0HLGQ9K28R7G8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-09-14T21:20:15.3736840+07:00 0HLGQ9K28R7G2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-14T21:20:15.3816504+07:00 0HLGQ9K28R7G3:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-09-14T21:20:15.4115097+07:00 0HLGQ9K28R7G6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-14T21:20:15.4157952+07:00 0HLGQ9K28R7G4:00000002 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2018-09-14T21:20:15.4260363+07:00 0HLGQ9K28R7G7:00000002 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-09-14T21:20:15.4483332+07:00 0HLGQ9K28R7G5:00000002 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.4626349+07:00 0HLGQ9K28R7G8:00000002 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.5494463+07:00 0HLGQ9K28R7G3:00000002 [INF] Request finished in 263.4904ms 304 text/css (791a596a)
+2018-09-14T21:20:15.5715648+07:00 0HLGQ9K28R7G4:00000002 [INF] Request finished in 297.7092ms 304 text/css (791a596a)
+2018-09-14T21:20:15.5750891+07:00 0HLGQ9K28R7G6:00000002 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.5878935+07:00 0HLGQ9K28R7G7:00000002 [INF] Request finished in 265.0307ms 304 text/css (791a596a)
+2018-09-14T21:20:15.6073772+07:00 0HLGQ9K28R7G5:00000002 [INF] Request finished in 272.3303ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.6113983+07:00 0HLGQ9K28R7G8:00000002 [INF] Request finished in 278.9279ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.6157704+07:00 0HLGQ9K28R7G1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-14T21:20:15.6183650+07:00 0HLGQ9K28R7G2:00000002 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.6710710+07:00 0HLGQ9K28R7G6:00000002 [INF] Request finished in 416.1018ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.6754670+07:00 0HLGQ9K28R7GA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/shared/std.js   (ca22a1cb)
+2018-09-14T21:20:15.6876736+07:00 0HLGQ9K28R7G0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-09-14T21:20:15.6922354+07:00 0HLGQ9K28R7G9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/login/index.js   (ca22a1cb)
+2018-09-14T21:20:15.7038529+07:00 0HLGQ9K28R7GB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/animate.css/animate.css   (ca22a1cb)
+2018-09-14T21:20:15.8144628+07:00 0HLGQ9K28R7G1:00000003 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.8176784+07:00 0HLGQ9K28R7G2:00000002 [INF] Request finished in 501.7888ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.8218034+07:00 0HLGQ9K28R7GA:00000001 [INF] The file "/app/shared/std.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.8293234+07:00 0HLGQ9K28R7G0:00000004 [INF] The file "/lib/jquery-validation/dist/additional-methods.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.8480399+07:00 0HLGQ9K28R7G9:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-09-14T21:20:15.8800860+07:00 0HLGQ9K28R7GB:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2018-09-14T21:20:15.9105185+07:00 0HLGQ9K28R7GA:00000001 [INF] Request finished in 535.8988ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.9222038+07:00 0HLGQ9K28R7G0:00000004 [INF] Request finished in 615.8828ms 304 application/javascript (791a596a)
+2018-09-14T21:20:15.9446387+07:00 0HLGQ9K28R7G9:00000001 [INF] Request finished in 601.5073ms 304 application/javascript (791a596a)
+2018-09-14T21:20:16.0025840+07:00 0HLGQ9K28R7GB:00000001 [INF] Request finished in 556.5488ms 304 text/css (791a596a)
+2018-09-14T21:20:16.0225664+07:00 0HLGQ9K28R7G1:00000003 [INF] Request finished in 455.4837ms 304 application/javascript (791a596a)
+2018-09-14T21:20:16.0539147+07:00 0HLGQ9K28R7G3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-14T21:20:16.0649001+07:00 0HLGQ9K28R7G3:00000003 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-09-14T21:20:16.0991471+07:00 0HLGQ9K28R7G3:00000003 [INF] Request finished in 21.714ms 304 font/woff2 (791a596a)
+2018-09-14T21:20:26.7797284+07:00 0HLGQ9K28R7G4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-14T21:20:27.0941449+07:00 0HLGQ9K28R7G4:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:20:32.5398654+07:00 0HLGQ9K28R7G4:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:20:32.8407969+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed DbCommand ("105"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-14T21:20:33.2324747+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed DbCommand ("47"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-14T21:20:33.3821557+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-14T21:20:33.4062267+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-14T21:20:33.4390225+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-14T21:20:33.4907121+07:00 0HLGQ9K28R7G4:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-14T21:20:33.4989066+07:00 0HLGQ9K28R7G4:00000003 [INF] User logged in. (fdce0db4)
+2018-09-14T21:20:33.5126934+07:00 0HLGQ9K28R7G4:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-14T21:20:33.6842744+07:00 0HLGQ9K28R7G4:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 6841.1038ms (afa2e885)
+2018-09-14T21:20:33.7371895+07:00 0HLGQ9K28R7G4:00000003 [INF] Request finished in 6911.0898ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-14T21:20:33.7520978+07:00 0HLGQ9K28R7G7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/Index   (ca22a1cb)
+2018-09-14T21:20:33.7639797+07:00 0HLGQ9K28R7G7:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-14T21:20:33.7715544+07:00 0HLGQ9K28R7G7:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:20:40.7064586+07:00 0HLGQ9K28R7G7:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:20:41.2110320+07:00 0HLGQ9K28R7G7:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" in 7440.3122ms (afa2e885)
+2018-09-14T21:20:41.2160725+07:00 0HLGQ9K28R7G7:00000003 [INF] Request finished in 7473.9304ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:20:41.3258781+07:00 0HLGQ9K28R7G8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-09-14T21:20:41.3269228+07:00 0HLGQ9K28R7G6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-09-14T21:20:41.3340492+07:00 0HLGQ9K28R7G5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-09-14T21:20:41.3571595+07:00 0HLGQ9K28R7G8:00000003 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.3626388+07:00 0HLGQ9K28R7G6:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.3695029+07:00 0HLGQ9K28R7G6:00000003 [INF] Request finished in 106.1391ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.3776124+07:00 0HLGQ9K28R7G5:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-09-14T21:20:41.4096144+07:00 0HLGQ9K28R7G8:00000003 [INF] Request finished in 103.6829ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.4313559+07:00 0HLGQ9K28R7G5:00000003 [INF] Request finished in 126.8133ms 304 text/css (791a596a)
+2018-09-14T21:20:41.4787472+07:00 0HLGQ9K28R7GA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-09-14T21:20:41.4813792+07:00 0HLGQ9K28R7G2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-09-14T21:20:41.4898057+07:00 0HLGQ9K28R7GA:00000002 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.5077465+07:00 0HLGQ9K28R7G1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-09-14T21:20:41.5336184+07:00 0HLGQ9K28R7G1:00000004 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.5411705+07:00 0HLGQ9K28R7GA:00000002 [INF] Request finished in 90.2677ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.5492715+07:00 0HLGQ9K28R7G2:00000003 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.6039990+07:00 0HLGQ9K28R7G2:00000003 [INF] Request finished in 151.3666ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.6347820+07:00 0HLGQ9K28R7G0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/moment/moment.js   (ca22a1cb)
+2018-09-14T21:20:41.8443931+07:00 0HLGQ9K28R7G9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-09-14T21:20:41.8555796+07:00 0HLGQ9K28R7G1:00000004 [INF] Request finished in 64.2221ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.8677255+07:00 0HLGQ9K28R7G9:00000002 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.9130584+07:00 0HLGQ9K28R7G9:00000002 [INF] Request finished in 290.3443ms 304 application/javascript (791a596a)
+2018-09-14T21:20:41.9368198+07:00 0HLGQ9K28R7G0:00000005 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-09-14T21:20:41.9681069+07:00 0HLGQ9K28R7G0:00000005 [INF] Request finished in 350.0088ms 304 application/javascript (791a596a)
+2018-09-14T21:23:41.9473864+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:23:42.5680478+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:23:42.6032116+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:23:42.6592626+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-09-14T21:23:42.7306271+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-14T21:23:42.7644940+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-09-14T21:23:42.8496988+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-09-14T21:23:42.8978004+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-09-14T21:23:42.9229719+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-09-14T21:23:42.9624520+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-09-14T21:23:43.0635707+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:23:43.0923603+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:23:43.1026481+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:23:43.5643596+07:00 0HLGQ9MMCUIL4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2018-09-14T21:23:43.9998244+07:00 0HLGQ9MMCUIL4:00000001 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:23:56.6667034+07:00 0HLGQ9MMCUIL4:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:23:57.8874132+07:00 0HLGQ9MMCUIL4:00000001 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 13903.8703ms (afa2e885)
+2018-09-14T21:23:57.8984362+07:00 0HLGQ9MMCUIL4:00000001 [INF] Request finished in 14367.9431ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:24:13.4565623+07:00 0HLGQ9MMCUIL4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2018-09-14T21:24:13.4715844+07:00 0HLGQ9MMCUIL4:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:24:13.8659302+07:00 0HLGQ9MMCUIL4:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-14T21:24:13.9466146+07:00 0HLGQ9MMCUIL4:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 474.618ms (afa2e885)
+2018-09-14T21:24:13.9848988+07:00 0HLGQ9MMCUIL4:00000002 [INF] Request finished in 497.3621ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:24:27.2121323+07:00 0HLGQ9MMCUIL4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-14T21:24:27.3290614+07:00 0HLGQ9MMCUIL4:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:24:27.3568627+07:00 0HLGQ9MMCUIL4:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:24:27.4472745+07:00 0HLGQ9MMCUIL4:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-14T21:24:27.5554983+07:00 0HLGQ9MMCUIL4:00000003 [WRN] Invalid password for user "4bf4f04a-e234-48bd-a2a5-08d6165c6dd6". (c2dce6c7)
+2018-09-14T21:24:27.5615060+07:00 0HLGQ9MMCUIL4:00000003 [WRN] User "4bf4f04a-e234-48bd-a2a5-08d6165c6dd6" failed to provide the correct password. (ec8d2479)
+2018-09-14T21:24:27.5778286+07:00 0HLGQ9MMCUIL4:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-14T21:24:27.6955253+07:00 0HLGQ9MMCUIL4:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 420.6451ms (afa2e885)
+2018-09-14T21:24:27.7205319+07:00 0HLGQ9MMCUIL4:00000003 [INF] Request finished in 490.8873ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-14T21:24:37.5330428+07:00 0HLGQ9MMCUIL4:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-14T21:24:37.5415161+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:24:37.5457648+07:00 0HLGQ9MMCUIL4:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:24:37.5633830+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-14T21:24:37.6763591+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-14T21:24:37.7569691+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("21"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-14T21:24:37.7829654+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-14T21:24:37.8185898+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-14T21:24:37.8252822+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-14T21:24:37.8364958+07:00 0HLGQ9MMCUIL4:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-14T21:24:37.8411146+07:00 0HLGQ9MMCUIL4:00000004 [INF] User logged in. (fdce0db4)
+2018-09-14T21:24:37.8456054+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-14T21:24:37.8510629+07:00 0HLGQ9MMCUIL4:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 311.6478ms (afa2e885)
+2018-09-14T21:24:37.8603729+07:00 0HLGQ9MMCUIL4:00000004 [INF] Request finished in 322.7136ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-14T21:24:37.8725701+07:00 0HLGQ9MMCUIL4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/Index   (ca22a1cb)
+2018-09-14T21:24:37.8858158+07:00 0HLGQ9MMCUIL4:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-14T21:24:37.8942641+07:00 0HLGQ9MMCUIL4:00000005 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:24:47.4763247+07:00 0HLGQ9MMCUIL4:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:24:47.8236134+07:00 0HLGQ9MMCUIL4:00000005 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" in 9923.1639ms (afa2e885)
+2018-09-14T21:24:47.8732110+07:00 0HLGQ9MMCUIL4:00000005 [INF] Request finished in 9959.0666ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:34:21.2158389+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:34:21.7375930+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:34:21.7623290+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:34:21.8356739+07:00  [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-09-14T21:34:21.8710044+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-14T21:34:21.8802248+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-09-14T21:34:21.9416378+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-09-14T21:34:21.9805173+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-09-14T21:34:21.9964560+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-09-14T21:34:22.0179861+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-09-14T21:34:22.0735942+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:34:22.0909284+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:34:22.0994267+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-14T21:34:22.3396369+07:00 0HLGQ9SKPD938:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2018-09-14T21:34:22.6219518+07:00 0HLGQ9SKPD938:00000001 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:34:27.7168963+07:00 0HLGQ9SKPD938:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:34:29.3524266+07:00 0HLGQ9SKPD938:00000001 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 6734.6256ms (afa2e885)
+2018-09-14T21:34:29.3711261+07:00 0HLGQ9SKPD938:00000001 [INF] Request finished in 7050.2383ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:34:48.8195927+07:00 0HLGQ9SKPD938:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2018-09-14T21:34:48.8458172+07:00 0HLGQ9SKPD938:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:34:49.2477468+07:00 0HLGQ9SKPD938:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-14T21:34:49.3235504+07:00 0HLGQ9SKPD938:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 476.8345ms (afa2e885)
+2018-09-14T21:34:49.3399535+07:00 0HLGQ9SKPD938:00000002 [INF] Request finished in 514.6708ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:35:07.1556645+07:00 0HLGQ9SKPD938:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-14T21:35:07.2770614+07:00 0HLGQ9SKPD938:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:35:07.3052064+07:00 0HLGQ9SKPD938:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2018-09-14T21:35:07.4106792+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-14T21:35:07.5741876+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-14T21:35:07.6760245+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-14T21:35:07.7448389+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-14T21:35:07.8059262+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-14T21:35:07.8182474+07:00 0HLGQ9SKPD938:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-14T21:35:07.8332394+07:00 0HLGQ9SKPD938:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-14T21:35:07.8458045+07:00 0HLGQ9SKPD938:00000003 [INF] User logged in. (fdce0db4)
+2018-09-14T21:35:07.8589796+07:00 0HLGQ9SKPD938:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-14T21:35:07.9758450+07:00 0HLGQ9SKPD938:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 737.7678ms (afa2e885)
+2018-09-14T21:35:08.0167574+07:00 0HLGQ9SKPD938:00000003 [INF] Request finished in 832.0644ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-14T21:35:08.0267575+07:00 0HLGQ9SKPD938:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/Index   (ca22a1cb)
+2018-09-14T21:35:08.0368794+07:00 0HLGQ9SKPD938:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-14T21:35:08.0456447+07:00 0HLGQ9SKPD938:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-14T21:35:11.6934793+07:00 0HLGQ9SKPD938:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-14T21:35:12.0135217+07:00 0HLGQ9SKPD938:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" in 3969.4123ms (afa2e885)
+2018-09-14T21:35:12.0246806+07:00 0HLGQ9SKPD938:00000004 [INF] Request finished in 3994.2177ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-14T21:35:25.1067969+07:00 0HLGQ9SKPD938:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-09-14T21:35:25.1165744+07:00 0HLGQ9SKPD938:00000005 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-09-14T21:35:25.1273861+07:00 0HLGQ9SKPD938:00000005 [INF] Request finished in 20.1212ms 304 text/plain (791a596a)

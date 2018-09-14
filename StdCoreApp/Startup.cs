@@ -13,6 +13,7 @@ using StdCoreApp.Data.EF;
 using StdCoreApp.Data.EF.Repositories;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.IRepositories;
+using StdCoreApp.Helpers;
 using StdCoreApp.Services;
 using System;
 
@@ -69,7 +70,9 @@ namespace StdCoreApp
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
-    
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
+
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 

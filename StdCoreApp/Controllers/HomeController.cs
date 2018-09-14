@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using StdCoreApp.Extensions;
 using StdCoreApp.Models;
 
 namespace StdCoreApp.Controllers
@@ -14,6 +15,7 @@ namespace StdCoreApp.Controllers
     {
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
 
