@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using StdCoreApp.Application.ViewModels.Product;
+using StdCoreApp.Application.ViewModels.System;
 using StdCoreApp.Data.Entities;
 
 namespace StdCoreApp.Application.AutoMapper
@@ -9,6 +10,7 @@ namespace StdCoreApp.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }
