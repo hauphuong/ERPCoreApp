@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 
 namespace StdCoreApp.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class LoginController : Controller
+    public class LoginController : BaseController
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
