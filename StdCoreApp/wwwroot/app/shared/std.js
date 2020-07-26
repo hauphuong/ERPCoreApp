@@ -1,9 +1,9 @@
 ﻿var std = {
     configs: {
         pageSize: 10,
-        pageIndex: 1,
+        pageIndex: 1
     },
-    notify: function(message, type) {
+    notify: function (message, type) {
         $.notify(message, {
             // whether to hide the notification on click
             clickToHide: true,
@@ -59,7 +59,7 @@
     dateFormatJson: function (datetime) {
         if (datetime == null || datetime == '')
             return '';
-        var newdate = new Date(datetime);
+        var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -78,7 +78,7 @@
     dateTimeFormatJson: function (datetime) {
         if (datetime == null || datetime == '')
             return '';
-        var newdate = new Date(datetime);
+        var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -112,7 +112,7 @@
         else
             return '<span class="badge bg-red">Khoá</span>';
     },
-    formatNumber: function (number,precision) {
+    formatNumber: function (number, precision) {
         if (!isFinite(number)) {
             return number.toString();
         }
@@ -127,9 +127,9 @@
         for (var i = 0; i < arr.length; i += 1) {
             var node = arr[i];
             node.children = [];
-            map[node.Id] = i; // use map to look-up the parents
-            if (node.ParentId !== null) {
-                arr[map[node.ParentId]].children.push(node);
+            map[node.id] = i; // use map to look-up the parents
+            if (node.parentId !== null) {
+                arr[map[node.parentId]].children.push(node);
             } else {
                 roots.push(node);
             }

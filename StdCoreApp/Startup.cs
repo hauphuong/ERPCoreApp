@@ -82,6 +82,8 @@ namespace StdCoreApp
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
+            services.AddTransient<ITagRepository, TagRepository>();
+            services.AddTransient<IProductTagRepository, ProductTagRepository>();
 
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IProductService, ProductService>();

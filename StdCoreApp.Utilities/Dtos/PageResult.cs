@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace StdCoreApp.Utilities.Dtos
 {
-    public class PageResult<T>:PageResultBase where T:class
+    public class PagedResult<T> : PagedResultBase where T : class
     {
-        public PageResult()
+        public PagedResult()
         {
             Results = new List<T>();
         }
+
         public IList<T> Results { get; set; }
     }
 }
