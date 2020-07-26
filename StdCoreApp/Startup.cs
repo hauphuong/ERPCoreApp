@@ -14,6 +14,7 @@ using StdCoreApp.Data.EF.Repositories;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Helpers;
+using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Services;
 using System;
 
@@ -73,6 +74,11 @@ namespace StdCoreApp
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
+            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
+
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
@@ -80,8 +86,6 @@ namespace StdCoreApp
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IFunctionService, FunctionService>();
-
-            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
