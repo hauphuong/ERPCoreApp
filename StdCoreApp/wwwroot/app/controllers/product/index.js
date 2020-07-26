@@ -3,6 +3,7 @@
         loadCategories();
         loadData();
         registerEvents();
+        registerControls();
     }
 
     function registerEvents() {
@@ -40,6 +41,32 @@
             $('#modal-add-edit').modal('show');
 
         });
+        $('#btnSelectImg').on('click', function () {
+            $('#fileInputImage').click();
+        });
+        $("#fileInputImage").on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Upload/UploadImage",
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    std.notify('Upload image succesful!', 'success');
+
+                },
+                error: function () {
+                    std.notify('There was error uploading files!', 'error');
+                }
+            });
+        });
         $('body').on('click', '.btn-edit', function (e) {
             e.preventDefault();
             var that = $(this).data('id');
@@ -72,7 +99,7 @@
                     $('#txtSeoPageTitleM').val(data.SeoPageTitle);
                     $('#txtSeoAliasM').val(data.SeoAlias);
 
-                    //CKEDITOR.instances.txtContentM.setData(data.Content);
+                    CKEDITOR.instances.txtContent.setData(data.Content);
                     $('#ckStatusM').prop('checked', data.Status == 1);
                     $('#ckHotM').prop('checked', data.HotFlag);
                     $('#ckShowHomeM').prop('checked', data.HomeFlag);
@@ -134,7 +161,7 @@
                 var seoPageTitle = $('#txtSeoPageTitleM').val();
                 var seoAlias = $('#txtSeoAliasM').val();
 
-                //var content = CKEDITOR.instances.txtContentM.getData();
+                var content = CKEDITOR.instances.txtContent.getData();
                 var status = $('#ckStatusM').prop('checked') == true ? 1 : 0;
                 var hot = $('#ckHotM').prop('checked');
                 var showHome = $('#ckShowHomeM').prop('checked');
@@ -151,7 +178,7 @@
                         OriginalPrice: originalPrice,
                         PromotionPrice: promotionPrice,
                         Description: description,
-                        Content: '',
+                        Content: content,
                         HomeFlag: showHome,
                         HotFlag: hot,
                         Tags: tags,
@@ -183,6 +210,27 @@
             }
 
         });
+
+    }
+
+    function registerControls() {
+        CKEDITOR.replace('txtContent', {});
+
+        //Fix: cannot click on element ck in modal
+        $.fn.modal.Constructor.prototype.enforceFocus = function () {
+            $(document)
+                .off('focusin.bs.modal') // guard against infinite focus loop
+                .on('focusin.bs.modal', $.proxy(function (e) {
+                    if (
+                        this.$element[0] !== e.target && !this.$element.has(e.target).length
+                        // CKEditor compatibility fix start.
+                        && !$(e.target).closest('.cke_dialog, .cke').length
+                        // CKEditor compatibility fix end.
+                    ) {
+                        this.$element.trigger('focus');
+                    }
+                }, this));
+        };
 
     }
     function initTreeDropDownCategory(selectedId) {
