@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using StdCoreApp.Application.Implementations;
 using StdCoreApp.Application.Interfaces;
+using StdCoreApp.Authorization;
 using StdCoreApp.Data.EF;
 using StdCoreApp.Data.EF.Repositories;
 using StdCoreApp.Data.Entities;
@@ -84,10 +86,15 @@ namespace StdCoreApp
             services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<ITagRepository, TagRepository>();
             services.AddTransient<IProductTagRepository, ProductTagRepository>();
+            services.AddTransient<IPermissionRepository, PermissionRepository>();
 
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IFunctionService, FunctionService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
