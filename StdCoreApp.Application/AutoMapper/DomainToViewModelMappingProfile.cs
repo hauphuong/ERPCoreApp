@@ -14,6 +14,10 @@ namespace StdCoreApp.Application.AutoMapper
             CreateMap<Function, FunctionViewModel>();
             CreateMap<AppUser, AppUserViewModel>();
             CreateMap<AppRole, AppRoleViewModel>();
+            CreateMap<Bill, BillViewModel>();
+            CreateMap<BillDetail, BillDetailViewModel>();
+            CreateMap<Color, ColorViewModel>();
+            CreateMap<Size, SizeViewModel>();
         }
     }
 }
