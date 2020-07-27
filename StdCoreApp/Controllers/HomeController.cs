@@ -10,7 +10,7 @@ using StdCoreApp.Models;
 
 namespace StdCoreApp.Controllers
 {
-  
+
     public class HomeController : Controller
     {
         public IActionResult Index()

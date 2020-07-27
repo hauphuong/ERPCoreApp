@@ -1,9 +1,16 @@
 ﻿var productController = function () {
+    var quantityManagement = new QuantityManagement();
+    var imageManagement = new ImageManagement();
+    var wholePriceManagement = new WholePriceManagement();
+
     this.initialize = function () {
         loadCategories();
         loadData();
         registerEvents();
         registerControls();
+        quantityManagement.initialize();
+        imageManagement.initialize();
+        wholePriceManagement.initialize();
     }
 
     function registerEvents() {
@@ -403,14 +410,15 @@
                         CreatedDate: std.dateTimeFormatJson(item.DateCreated),
                         Status: std.getStatus(item.Status)
                     });
-                    $('#lblTotalRecords').text(response.RowCount);
-                    if (render != '') {
-                        $('#tbl-content').html(render);
-                    }
-                    wrapPaging(response.RowCount, function () {
-                        loadData();
-                    }, isPageChanged);
+
                 });
+                $('#lblTotalRecords').text(response.RowCount);
+                if (render != '') {
+                    $('#tbl-content').html(render);
+                }
+                wrapPaging(response.RowCount, function () {
+                    loadData();
+                }, isPageChanged);
             },
             error: function (status) {
                 console.log(status);
