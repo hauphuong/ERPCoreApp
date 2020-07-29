@@ -15,6 +15,7 @@ using StdCoreApp.Data.EF;
 using StdCoreApp.Data.EF.Repositories;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.IRepositories;
+using StdCoreApp.Extensions;
 using StdCoreApp.Helpers;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Services;
@@ -67,6 +68,7 @@ namespace StdCoreApp
                 options.Cookie.HttpOnly = true;
             });
 
+            services.AddImageResizer();
             services.AddAutoMapper();
 
             // Add application services.
@@ -139,6 +141,7 @@ namespace StdCoreApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseImageResizer();
             app.UseStaticFiles();
 
             app.UseAuthentication();
