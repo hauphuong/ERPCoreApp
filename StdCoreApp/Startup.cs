@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -44,6 +45,9 @@ namespace StdCoreApp
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddMemoryCache();
+            services.AddMinResponse();
+
             // Configure Identity
             services.Configure<IdentityOptions>(options =>
             {
@@ -61,6 +65,12 @@ namespace StdCoreApp
                 // User settings
                 options.User.RequireUniqueEmail = true;
             });
+
+            //services.AddRecaptcha(new RecaptchaOptions()
+            //{
+            //    SiteKey = Configuration["Recaptcha:SiteKey"],
+            //    SecretKey = Configuration["Recaptcha:SecretKey"]
+            //});
 
             services.AddSession(options =>
             {
@@ -85,7 +95,21 @@ namespace StdCoreApp
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
-            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddMvc(options =>
+            {
+                options.CacheProfiles.Add("Default",
+                    new CacheProfile()
+                    {
+                        Duration = 60
+                    });
+                options.CacheProfiles.Add("Never",
+                    new CacheProfile()
+                    {
+                        Location = ResponseCacheLocation.None,
+                        NoStore = true
+                    });
+            })
+                .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
@@ -143,7 +167,7 @@ namespace StdCoreApp
 
             app.UseImageResizer();
             app.UseStaticFiles();
-
+            app.UseMinResponse();
             app.UseAuthentication();
 
             app.UseSession();
