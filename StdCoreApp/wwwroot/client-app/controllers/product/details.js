@@ -20,7 +20,7 @@
                     size: sizeId
                 },
                 success: function () {
-                    tedu.notify('Product was added successful', 'success');
+                    std.notify('Product was added successful', 'success');
                     loadHeaderCart();
                 }
             });

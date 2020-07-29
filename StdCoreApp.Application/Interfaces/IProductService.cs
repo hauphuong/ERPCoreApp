@@ -1,4 +1,5 @@
-﻿using StdCoreApp.Application.ViewModels.Product;
+﻿using StdCoreApp.Application.ViewModels.Common;
+using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Utilities.Dtos;
 using System;
 using System.Collections.Generic;
@@ -38,5 +39,13 @@ namespace StdCoreApp.Application.Interfaces
         List<ProductViewModel> GetLastest(int top);
 
         List<ProductViewModel> GetHotProduct(int top);
+
+        List<ProductViewModel> GetRelatedProducts(int id, int top);
+
+        List<ProductViewModel> GetUpsellProducts(int top);
+
+        List<TagViewModel> GetProductTags(int productId);
+
+        bool CheckAvailability(int productId, int size, int color);
     }
 }

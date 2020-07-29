@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Application.ViewModels.System;
 using StdCoreApp.Data.Entities;
@@ -34,6 +35,12 @@ namespace StdCoreApp.Application.AutoMapper
             CreateMap<BillDetailViewModel, BillDetail>()
               .ConstructUsing(c => new BillDetail(c.Id, c.BillId, c.ProductId,
               c.Quantity, c.Price, c.ColorId, c.SizeId));
+
+            CreateMap<ContactViewModel, Contact>()
+                .ConstructUsing(c => new Contact(c.Id, c.Name, c.Phone, c.Email, c.Website, c.Address, c.Other, c.Lng, c.Lat, c.Status));
+
+            CreateMap<FeedbackViewModel, Feedback>()
+                .ConstructUsing(c => new Feedback(c.Id, c.Name, c.Email, c.Message, c.Status));
         }
     }
 }

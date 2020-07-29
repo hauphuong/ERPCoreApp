@@ -17,7 +17,7 @@
                     size: 0
                 },
                 success: function (response) {
-                    tedu.notify(resources["AddCartOK"], 'success');
+                    std.notify(resources["AddCartOK"], 'success');
                     loadHeaderCart();
                 }
             });
@@ -33,7 +33,7 @@
                     productId: id
                 },
                 success: function (response) {
-                    tedu.notify(resources["RemoveCartOK"], 'success');
+                    std.notify(resources["RemoveCartOK"], 'success');
                     loadHeaderCart();
                 }
             });

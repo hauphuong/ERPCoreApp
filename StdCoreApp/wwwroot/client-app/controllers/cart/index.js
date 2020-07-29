@@ -24,7 +24,7 @@
                     productId: id
                 },
                 success: function () {
-                    tedu.notify('Removing product is successful.', 'success');
+                    std.notify('Removing product is successful.', 'success');
                     loadHeaderCart();
                     loadData();
                 }
@@ -43,13 +43,13 @@
                         quantity: q
                     },
                     success: function () {
-                        tedu.notify('Update quantity is successful', 'success');
+                        std.notify('Update quantity is successful', 'success');
                         loadHeaderCart();
                         loadData();
                     }
                 });
             } else {
-                tedu.notify('Your quantity is invalid', 'error');
+                std.notify('Your quantity is invalid', 'error');
             }
 
         });
@@ -72,13 +72,13 @@
                         size:sizeId
                     },
                     success: function () {
-                        tedu.notify('Update quantity is successful', 'success');
+                        std.notify('Update quantity is successful', 'success');
                         loadHeaderCart();
                         loadData();
                     }
                 });
             } else {
-                tedu.notify('Your quantity is invalid', 'error');
+                std.notify('Your quantity is invalid', 'error');
             }
 
         });
@@ -100,13 +100,13 @@
                         size:sizeId
                     },
                     success: function () {
-                        tedu.notify('Update quantity is successful', 'success');
+                        std.notify('Update quantity is successful', 'success');
                         loadHeaderCart();
                         loadData();
                     }
                 });
             } else {
-                tedu.notify('Your quantity is invalid', 'error');
+                std.notify('Your quantity is invalid', 'error');
             }
 
         });
@@ -116,7 +116,7 @@
                 url: '/Cart/ClearCart',
                 type: 'post',
                 success: function () {
-                    tedu.notify('Clear cart is successful', 'success');
+                    std.notify('Clear cart is successful', 'success');
                     loadHeaderCart();
                     loadData();
                 }
@@ -132,7 +132,7 @@
                 cachedObj.colors = response;
             },
             error: function () {
-                tedu.notify('Has an error in progress', 'error');
+                std.notify('Has an error in progress', 'error');
             }
         });
     }
@@ -146,7 +146,7 @@
                 cachedObj.sizes = response;
             },
             error: function () {
-                tedu.notify('Has an error in progress', 'error');
+                std.notify('Has an error in progress', 'error');
             }
         });
     }
@@ -191,16 +191,16 @@
                             ProductId: item.Product.Id,
                             ProductName: item.Product.Name,
                             Image: item.Product.Image,
-                            Price: tedu.formatNumber(item.Price, 0),
+                            Price: std.formatNumber(item.Price, 0),
                             Quantity: item.Quantity,
                             Colors: getColorOptions(item.Color == null? 0: item.Color.Id),
                             Sizes:getSizeOptions(item.Size == null? "": item.Size.Id),
-                            Amount: tedu.formatNumber(item.Price * item.Quantity, 0),
+                            Amount: std.formatNumber(item.Price * item.Quantity, 0),
                             Url: '/' + item.Product.SeoAlias + "-p." + item.Product.Id + ".html"
                         });
                     totalAmount += item.Price * item.Quantity;
                 });
-                $('#lblTotalAmount').text(tedu.formatNumber(totalAmount, 0));
+                $('#lblTotalAmount').text(std.formatNumber(totalAmount, 0));
                 if (render !== "")
                     $('#table-cart-content').html(render);
                 else

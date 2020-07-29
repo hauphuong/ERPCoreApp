@@ -59,6 +59,21 @@ namespace StdCoreApp.Data.EF
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
             }
+            if (!_context.Contacts.Any())
+            {
+                _context.Contacts.Add(new Contact()
+                {
+                    Id = CommonConstants.DefaultContactId,
+                    Address = "No 36 Lane 133 Nguyen Phong Sac Cau Giay",
+                    Email = "dpshoes@gmail.com",
+                    Name = "DP shoes",
+                    Phone = "0942 324 543",
+                    Status = Status.Active,
+                    Website = "http://dpshoes.com.vn",
+                    Lat = 21.0435009,
+                    Lng = 105.7894758
+                });
+            }
             if (_context.Functions.Count() == 0)
             {
                 _context.Functions.AddRange(new List<Function>()
