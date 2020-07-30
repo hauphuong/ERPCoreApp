@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StdCoreApp.Application.ViewModels.Blog;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Application.ViewModels.System;
@@ -41,6 +42,9 @@ namespace StdCoreApp.Application.AutoMapper
 
             CreateMap<FeedbackViewModel, Feedback>()
                 .ConstructUsing(c => new Feedback(c.Id, c.Name, c.Email, c.Message, c.Status));
+
+            CreateMap<PageViewModel, Page>()
+            .ConstructUsing(c => new Page(c.Id, c.Name, c.Alias, c.Content, c.Status));
         }
     }
 }
