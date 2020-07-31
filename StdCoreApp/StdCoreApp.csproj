@@ -28,11 +28,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StdCoreApp.Application.Dapper\StdCoreApp.Application.Dapper.csproj" />
     <ProjectReference Include="..\StdCoreApp.Application\StdCoreApp.Application.csproj" />
     <ProjectReference Include="..\StdCoreApp.Data.EF\StdCoreApp.Data.EF.csproj" />
     <ProjectReference Include="..\StdCoreApp.Data\StdCoreApp.Data.csproj" />
     <ProjectReference Include="..\StdCoreApp.Infrastruture\StdCoreApp.Infrastruture.csproj" />
     <ProjectReference Include="..\StdCoreApp.Utilities\StdCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\bundled\" />
   </ItemGroup>
 
 </Project>

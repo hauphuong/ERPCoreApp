@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using StdCoreApp.Application.Dapper.Implementation;
+using StdCoreApp.Application.Dapper.Interfaces;
 using StdCoreApp.Application.Implementations;
 using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Authorization;
@@ -158,6 +160,7 @@ namespace StdCoreApp
             services.AddTransient<IFeedbackService, FeedbackService>();
             services.AddTransient<IContactService, ContactService>();
             services.AddTransient<IPageService, PageService>();
+            services.AddTransient<IReportService, ReportService>();
 
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
