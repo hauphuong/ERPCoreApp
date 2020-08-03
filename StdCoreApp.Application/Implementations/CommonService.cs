@@ -3,7 +3,6 @@ using AutoMapper.QueryableExtensions;
 using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Data.Entities;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Constants;
 using System.Collections.Generic;
@@ -13,15 +12,15 @@ namespace StdCoreApp.Application.Implementations
 {
     public class CommonService : ICommonService
     {
-        private IFooterRepository _footerRepository;
-        private ISystemConfigRepository _systemConfigRepository;
+        private IRepository<Footer, string> _footerRepository;
+        private IRepository<SystemConfig, string> _systemConfigRepository;
         private IUnitOfWork _unitOfWork;
-        private ISlideRepository _slideRepository;
+        private IRepository<Slide, int> _slideRepository;
 
-        public CommonService(IFooterRepository footerRepository,
-            ISystemConfigRepository systemConfigRepository,
+        public CommonService(IRepository<Footer, string> footerRepository,
+            IRepository<SystemConfig, string> systemConfigRepository,
             IUnitOfWork unitOfWork,
-            ISlideRepository slideRepository)
+            IRepository<Slide, int> slideRepository)
         {
             _footerRepository = footerRepository;
             _unitOfWork = unitOfWork;

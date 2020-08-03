@@ -3,7 +3,6 @@ using AutoMapper.QueryableExtensions;
 using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Data.Entities;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Dtos;
 using System;
@@ -14,10 +13,10 @@ namespace StdCoreApp.Application.Implementations
 {
     public class FeedbackService : IFeedbackService
     {
-        private IFeedbackRepository _feedbackRepository;
+        private IRepository<Feedback, int> _feedbackRepository;
         private IUnitOfWork _unitOfWork;
 
-        public FeedbackService(IFeedbackRepository feedbackRepository,
+        public FeedbackService(IRepository<Feedback, int> feedbackRepository,
             IUnitOfWork unitOfWork)
         {
             _feedbackRepository = feedbackRepository;

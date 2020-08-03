@@ -3,7 +3,6 @@ using AutoMapper.QueryableExtensions;
 using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Data.Entities;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Dtos;
 using System;
@@ -14,10 +13,10 @@ namespace StdCoreApp.Application.Implementations
 {
     public class ContactService : IContactService
     {
-        private IContactRepository _contactRepository;
+        private IRepository<Contact, string> _contactRepository;
         private IUnitOfWork _unitOfWork;
 
-        public ContactService(IContactRepository contactRepository,
+        public ContactService(IRepository<Contact, string> contactRepository,
             IUnitOfWork unitOfWork)
         {
             this._contactRepository = contactRepository;

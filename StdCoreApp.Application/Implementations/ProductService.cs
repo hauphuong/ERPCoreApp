@@ -6,7 +6,6 @@ using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Enums;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Constants;
 using StdCoreApp.Utilities.Dtos;
@@ -20,20 +19,21 @@ namespace StdCoreApp.Application.Implementations
 {
     public class ProductService : IProductService
     {
-        IProductRepository _productRepository;
-        ITagRepository _tagRepository;
-        IProductTagRepository _productTagRepository;
-        IProductQuantityRepository _productQuantityRepository;
-        IProductImageRepository _productImageRepository;
-        IWholePriceRepository _wholePriceRepository;
-        IUnitOfWork _unitOfWork;
-        public ProductService(IProductRepository productRepository,
-            ITagRepository tagRepository,
-            IProductQuantityRepository productQuantityRepository,
-            IProductImageRepository productImageRepository,
-            IWholePriceRepository wholePriceRepository,
+        private IRepository<Product, int> _productRepository;
+        private IRepository<Tag, string> _tagRepository;
+        private IRepository<ProductTag, int> _productTagRepository;
+        private IRepository<ProductQuantity, int> _productQuantityRepository;
+        private IRepository<ProductImage, int> _productImageRepository;
+        private IRepository<WholePrice, int> _wholePriceRepository;
+        private IUnitOfWork _unitOfWork;
+
+        public ProductService(IRepository<Product, int> productRepository,
+            IRepository<Tag, string> tagRepository,
+            IRepository<ProductQuantity, int> productQuantityRepository,
+            IRepository<ProductImage, int> productImageRepository,
+            IRepository<WholePrice, int> wholePriceRepository,
             IUnitOfWork unitOfWork,
-        IProductTagRepository productTagRepository)
+            IRepository<ProductTag, int> productTagRepository)
         {
             _productRepository = productRepository;
             _tagRepository = tagRepository;
@@ -76,7 +76,6 @@ namespace StdCoreApp.Application.Implementations
                     product.ProductTags.Add(productTag);
                 }
                 _productRepository.Add(product);
-
             }
             return productVm;
         }
@@ -145,7 +144,6 @@ namespace StdCoreApp.Application.Implementations
         {
             return _productQuantityRepository.FindAll(x => x.ProductId == productId).ProjectTo<ProductQuantityViewModel>().ToList();
         }
-
 
         public void ImportExcel(string filePath, int categoryId)
         {
@@ -245,7 +243,6 @@ namespace StdCoreApp.Application.Implementations
                     Caption = string.Empty
                 });
             }
-
         }
 
         public void AddWholePrice(int productId, List<WholePriceViewModel> wholePrices)
@@ -317,7 +314,6 @@ namespace StdCoreApp.Application.Implementations
                             Name = t.Name
                         };
             return query.ToList();
-
         }
 
         public bool CheckAvailability(int productId, int size, int color)

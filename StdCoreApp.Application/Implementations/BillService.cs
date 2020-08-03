@@ -4,31 +4,29 @@ using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Enums;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 
 namespace StdCoreApp.Application.Implementations
 {
     public class BillService : IBillService
     {
-        private readonly IBillRepository _orderRepository;
-        private readonly IBillDetailRepository _orderDetailRepository;
-        private readonly IColorRepository _colorRepository;
-        private readonly ISizeRepository _sizeRepository;
-        private readonly IProductRepository _productRepository;
+        private readonly IRepository<Bill, int> _orderRepository;
+        private readonly IRepository<BillDetail, int> _orderDetailRepository;
+        private readonly IRepository<Color, int> _colorRepository;
+        private readonly IRepository<Size, int> _sizeRepository;
+        private readonly IRepository<Product, int> _productRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public BillService(IBillRepository orderRepository,
-            IBillDetailRepository orderDetailRepository,
-            IColorRepository colorRepository,
-            IProductRepository productRepository,
-            ISizeRepository sizeRepository,
+        public BillService(IRepository<Bill, int> orderRepository,
+            IRepository<BillDetail, int> orderDetailRepository,
+            IRepository<Color, int> colorRepository,
+            IRepository<Product, int> productRepository,
+            IRepository<Size, int> sizeRepository,
             IUnitOfWork unitOfWork)
         {
             _orderRepository = orderRepository;

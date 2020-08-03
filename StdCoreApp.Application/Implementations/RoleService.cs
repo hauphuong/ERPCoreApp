@@ -18,12 +18,12 @@ namespace StdCoreApp.Application.Implementations
     public class RoleService : IRoleService
     {
         private RoleManager<AppRole> _roleManager;
-        private IFunctionRepository _functionRepository;
-        private IPermissionRepository _permissionRepository;
+        private IRepository<Function, string> _functionRepository;
+        private IRepository<Permission, int> _permissionRepository;
         private IUnitOfWork _unitOfWork;
 
         public RoleService(RoleManager<AppRole> roleManager, IUnitOfWork unitOfWork,
-         IFunctionRepository functionRepository, IPermissionRepository permissionRepository)
+         IRepository<Function, string> functionRepository, IRepository<Permission, int> permissionRepository)
         {
             _unitOfWork = unitOfWork;
             _roleManager = roleManager;

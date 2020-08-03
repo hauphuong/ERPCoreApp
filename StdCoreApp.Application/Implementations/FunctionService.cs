@@ -5,7 +5,6 @@ using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.System;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Enums;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,19 +15,18 @@ namespace StdCoreApp.Application.Implementations
 {
     public class FunctionService : IFunctionService
     {
-        private IFunctionRepository _functionRepository;
+        private IRepository<Function, string> _functionRepository;
         private IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
         public FunctionService(IMapper mapper,
-            IFunctionRepository functionRepository,
+            IRepository<Function, string> functionRepository,
             IUnitOfWork unitOfWork)
         {
             _functionRepository = functionRepository;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-
 
         public bool CheckExistedId(string id)
         {
@@ -64,6 +62,7 @@ namespace StdCoreApp.Application.Implementations
         {
             return _functionRepository.FindAll(x => x.ParentId == parentId).ProjectTo<FunctionViewModel>();
         }
+
         public void Save()
         {
             _unitOfWork.Commit();
@@ -71,14 +70,12 @@ namespace StdCoreApp.Application.Implementations
 
         public void Update(FunctionViewModel functionVm)
         {
-
             var functionDb = _functionRepository.FindById(functionVm.Id);
             var function = _mapper.Map<Function>(functionVm);
         }
 
         public void ReOrder(string sourceId, string targetId)
         {
-
             var source = _functionRepository.FindById(sourceId);
             var target = _functionRepository.FindById(targetId);
             int tempOrder = source.SortOrder;
@@ -88,7 +85,6 @@ namespace StdCoreApp.Application.Implementations
 
             _functionRepository.Update(source);
             _functionRepository.Update(target);
-
         }
 
         public void UpdateParentId(string sourceId, string targetId, Dictionary<string, int> items)

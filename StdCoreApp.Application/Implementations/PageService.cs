@@ -3,22 +3,20 @@ using AutoMapper.QueryableExtensions;
 using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Blog;
 using StdCoreApp.Data.Entities;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace StdCoreApp.Application.Implementations
 {
     public class PageService : IPageService
     {
-        private IPageRepository _pageRepository;
+        private IRepository<Page, int> _pageRepository;
         private IUnitOfWork _unitOfWork;
 
-        public PageService(IPageRepository pageRepository,
+        public PageService(IRepository<Page, int> pageRepository,
             IUnitOfWork unitOfWork)
         {
             this._pageRepository = pageRepository;

@@ -4,9 +4,7 @@ using StdCoreApp.Application.Interfaces;
 using StdCoreApp.Application.ViewModels.Product;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Enums;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,10 +12,10 @@ namespace StdCoreApp.Application.Implementations
 {
     public class ProductCategoryService : IProductCategoryService
     {
-        private IProductCategoryRepository _productCategoryRepository;
+        private IRepository<ProductCategory, int> _productCategoryRepository;
         private IUnitOfWork _unitOfWork;
 
-        public ProductCategoryService(IProductCategoryRepository productCategoryRepository,
+        public ProductCategoryService(IRepository<ProductCategory, int> productCategoryRepository,
             IUnitOfWork unitOfWork)
         {
             _productCategoryRepository = productCategoryRepository;

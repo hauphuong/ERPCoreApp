@@ -5,28 +5,25 @@ using StdCoreApp.Application.ViewModels.Blog;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Data.Entities;
 using StdCoreApp.Data.Enums;
-using StdCoreApp.Data.IRepositories;
 using StdCoreApp.Infrastruture.Interfaces;
 using StdCoreApp.Utilities.Constants;
 using StdCoreApp.Utilities.Dtos;
 using StdCoreApp.Utilities.Helpers;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace StdCoreApp.Application.Implementations
 {
     public class BlogService : IBlogService
     {
-        private readonly IBlogRepository _blogRepository;
-        private readonly ITagRepository _tagRepository;
-        private readonly IBlogTagRepository _blogTagRepository;
+        private readonly IRepository<Blog, int> _blogRepository;
+        private readonly IRepository<Tag, string> _tagRepository;
+        private readonly IRepository<BlogTag, int> _blogTagRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public BlogService(IBlogRepository blogRepository,
-            IBlogTagRepository blogTagRepository,
-            ITagRepository tagRepository,
+        public BlogService(IRepository<Blog, int> blogRepository,
+            IRepository<BlogTag, int> blogTagRepository,
+            IRepository<Tag, string> tagRepository,
             IUnitOfWork unitOfWork)
         {
             _blogRepository = blogRepository;
