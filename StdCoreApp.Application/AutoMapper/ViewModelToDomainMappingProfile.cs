@@ -45,6 +45,10 @@ namespace StdCoreApp.Application.AutoMapper
 
             CreateMap<PageViewModel, Page>()
             .ConstructUsing(c => new Page(c.Id, c.Name, c.Alias, c.Content, c.Status));
+
+            CreateMap<BlogViewModel, Blog>()
+            .ConstructUsing(c => new Blog(c.Id, c.Name, c.Image, c.Description, c.Content, c.HomeFlag,c.HotFlag, c.Tags, c.Status,c.SeoPageTitle,
+            c.SeoAlias,c.SeoKeywords, c.SeoDescription));
         }
     }
 }

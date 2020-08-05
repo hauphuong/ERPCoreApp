@@ -1,17 +1,15 @@
 ﻿using StdCoreApp.Application.ViewModels.Blog;
 using StdCoreApp.Application.ViewModels.Common;
 using StdCoreApp.Utilities.Dtos;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace StdCoreApp.Application.Interfaces
 {
     public interface IBlogService
     {
-        BlogViewModel Add(BlogViewModel product);
+        BlogViewModel Add(BlogViewModel blog);
 
-        void Update(BlogViewModel product);
+        void Update(BlogViewModel blog);
 
         void Delete(int id);
 
@@ -34,6 +32,8 @@ namespace StdCoreApp.Application.Interfaces
         List<string> GetListByName(string name);
 
         BlogViewModel GetById(int id);
+
+        BlogViewModel GetByAlias(string alias);
 
         void Save();
 
