@@ -96,10 +96,8 @@ namespace StdCoreApp.WebApi
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
-            services.AddTransient<IProductRepository, ProductRepository>();
-
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc().
@@ -113,8 +111,8 @@ namespace StdCoreApp.WebApi
                     Version = "v1",
                     Title = "STD Project",
                     Description = "STD API Swagger surface",
-                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "Haulv", Email = "luonghau91@gmail.com", Url = "http://www.tedu.com.vn" },
-                    License = new License { Name = "MIT", Url = "https://github.com/teduinternational/teducoreapp" }
+                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "Haulv", Email = "luonghau91@gmail.com", Url = "http://www.dpshoes.com.vn" },
+                    License = new License { Name = "MIT", Url = "https://github.com/hauphuong/ERPCoreApp" }
                 });
             });
         }
@@ -129,7 +127,7 @@ namespace StdCoreApp.WebApi
 
             app.UseStaticFiles();
             app.UseCors("TeduCorsPolicy");
-            app.UseAuthentication();
+            //app.UseAuthentication();
 
             app.UseSwagger();
             app.UseSwaggerUI(s =>

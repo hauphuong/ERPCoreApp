@@ -8438,3 +8438,1113 @@ FROM [AppRoles] AS [dto]" (0723d8ff)
 2020-08-05T15:12:42.1459862+07:00 0HM1P2PD58EIS:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
 2020-08-05T15:12:42.1486432+07:00 0HM1P2PD58EIS:0000000E [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.RoleController.GetAll (StdCoreApp)" in 18.0454ms (afa2e885)
 2020-08-05T15:12:42.1537324+07:00 0HM1P2PD58EIS:0000000E [INF] Request finished in 28.4037ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:31:25.9645561+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:31:26.3812351+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.4229265+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.4291303+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.4441059+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-08-05T16:31:26.4980334+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-08-05T16:31:26.5031694+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-08-05T16:31:26.5083624+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-08-05T16:31:26.5134535+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-08-05T16:31:26.5182035+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-08-05T16:31:26.5230239+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-08-05T16:31:26.5292616+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.5353351+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.5405297+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:31:26.8573073+07:00 0HM1P499P8H2I:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50039/  0 (ca22a1cb)
+2020-08-05T16:31:26.8573070+07:00 0HM1P499P8H2J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2020-08-05T16:31:26.9220393+07:00 0HM1P499P8H2I:00000001 [INF] Request finished in 115.5473ms 200  (791a596a)
+2020-08-05T16:31:26.9963339+07:00 0HM1P499P8H2J:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2020-08-05T16:31:27.2938991+07:00 0HM1P499P8H2J:00000001 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:31:27.3366521+07:00 0HM1P499P8H2J:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:31:27.4154046+07:00 0HM1P499P8H2J:00000001 [WRN] The Include operation for navigation '"[c].Products"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2020-08-05T16:31:27.5076069+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2020-08-05T16:31:27.5730210+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:31:27.5928945+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:31:27.6177620+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:27.6236157+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:27.6275419+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:27.6318553+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:27.6357342+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:27.6511802+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2020-08-05T16:31:27.6577382+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[BlogId], [dto].[TagId]
+FROM [BlogTags] AS [dto]
+WHERE @_outer_Id = [dto].[BlogId]" (0723d8ff)
+2020-08-05T16:31:27.6705488+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2020-08-05T16:31:31.4924413+07:00 0HM1P499P8H2J:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:31:31.9427535+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:31:31.9520342+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:31.9559436+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:31.9607777+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:31.9666053+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:32.8960673+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:31:32.9000208+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:32.9039125+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:32.9068330+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:32.9100544+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.0156915+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:31:33.0192077+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.0222447+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.0250803+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.0280572+07:00 0HM1P499P8H2J:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.2699595+07:00 0HM1P499P8H2J:00000001 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 6007.3434ms (afa2e885)
+2020-08-05T16:31:33.5433807+07:00 0HM1P499P8H2J:00000001 [INF] Request finished in 6737.784ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:31:33.5758948+07:00 0HM1P499P8H2I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/client-side/images/logo.png   (ca22a1cb)
+2020-08-05T16:31:33.5874053+07:00 0HM1P499P8H2J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/client-side/images/slider/slide-1.jpg   (ca22a1cb)
+2020-08-05T16:31:33.5962569+07:00 0HM1P499P8H2L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/client-side/images/products/product-1.jpg?w=190   (ca22a1cb)
+2020-08-05T16:31:33.6000295+07:00 0HM1P499P8H2K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/client-side/images/footer-logo.png   (ca22a1cb)
+2020-08-05T16:31:33.6131547+07:00 0HM1P499P8H2L:00000001 [INF] Resizing /client-side/images/products/product-1.jpg with params w: 190, h: 0, autorotate: False, quality: 100, format: jpg, mode: max (d9bba74d)
+2020-08-05T16:31:33.6394312+07:00 0HM1P499P8H2J:00000002 [INF] The file "/client-side/images/slider/slide-1.jpg" was not modified (f1f8d725)
+2020-08-05T16:31:33.6400999+07:00 0HM1P499P8H2K:00000001 [INF] The file "/client-side/images/footer-logo.png" was not modified (f1f8d725)
+2020-08-05T16:31:33.6412270+07:00 0HM1P499P8H2I:00000002 [INF] The file "/client-side/images/logo.png" was not modified (f1f8d725)
+2020-08-05T16:31:33.6550854+07:00 0HM1P499P8H2K:00000001 [INF] Request finished in 68.1317ms 304 image/png (791a596a)
+2020-08-05T16:31:33.6558553+07:00 0HM1P499P8H2J:00000002 [INF] Request finished in 69.3035ms 304 image/jpeg (791a596a)
+2020-08-05T16:31:33.6580740+07:00 0HM1P499P8H2I:00000002 [INF] Request finished in 77.6378ms 304 image/png (791a596a)
+2020-08-05T16:31:33.7554855+07:00 0HM1P499P8H2K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2020-08-05T16:31:33.7613586+07:00 0HM1P499P8H2K:00000002 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2020-08-05T16:31:33.7693747+07:00 0HM1P499P8H2K:00000002 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:31:33.7735926+07:00 0HM1P499P8H2K:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:31:33.7806141+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2020-08-05T16:31:33.7850856+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:31:33.7896367+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:31:33.7948318+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.8049408+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.8195596+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.8203346+07:00 0HM1P499P8H2L:00000001 [INF] Request finished in 233.1291ms 200 image/jpeg (791a596a)
+2020-08-05T16:31:33.8288922+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.8374162+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.8543832+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2020-08-05T16:31:33.8599238+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[BlogId], [dto].[TagId]
+FROM [BlogTags] AS [dto]
+WHERE @_outer_Id = [dto].[BlogId]" (0723d8ff)
+2020-08-05T16:31:33.8690574+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2020-08-05T16:31:33.8748844+07:00 0HM1P499P8H2K:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:31:33.8852747+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:31:33.8984696+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9037444+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9072121+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9118649+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9233308+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:31:33.9265133+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9305234+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9387834+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9434100+07:00 0HM1P499P8H2K:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:31:33.9513556+07:00 0HM1P499P8H2K:00000002 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 180.9277ms (afa2e885)
+2020-08-05T16:31:33.9637259+07:00 0HM1P499P8H2K:00000002 [INF] Request finished in 206.9924ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:32:18.6797830+07:00 0HM1P499P8H2I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2020-08-05T16:32:18.6847974+07:00 0HM1P499P8H2I:00000003 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2020-08-05T16:32:18.7028928+07:00 0HM1P499P8H2I:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:18.9060507+07:00 0HM1P499P8H2I:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-08-05T16:32:19.3423897+07:00 0HM1P499P8H2I:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 648.7183ms (afa2e885)
+2020-08-05T16:32:19.3496081+07:00 0HM1P499P8H2I:00000003 [INF] Request finished in 670.2013ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:32:19.4603347+07:00 0HM1P499P8H2J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2020-08-05T16:32:19.4665423+07:00 0HM1P499P8H2J:00000003 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2020-08-05T16:32:19.4740936+07:00 0HM1P499P8H2J:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:19.4821271+07:00 0HM1P499P8H2J:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-08-05T16:32:19.4902387+07:00 0HM1P499P8H2J:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 15.9125ms (afa2e885)
+2020-08-05T16:32:19.5036127+07:00 0HM1P499P8H2J:00000003 [INF] Request finished in 35.6003ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:32:28.4051780+07:00 0HM1P499P8H2L:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2020-08-05T16:32:28.4082438+07:00 0HM1P499P8H2L:00000002 [INF] "Identity.Application" was not authenticated. Failure message: "Unprotect ticket failed" (48071232)
+2020-08-05T16:32:28.5402524+07:00 0HM1P499P8H2L:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:28.5494087+07:00 0HM1P499P8H2L:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:32:28.6212008+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-08-05T16:32:28.8005655+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-08-05T16:32:28.8353232+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-08-05T16:32:28.8486842+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-08-05T16:32:28.8681699+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-08-05T16:32:28.8744059+07:00 0HM1P499P8H2L:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-08-05T16:32:28.8985990+07:00 0HM1P499P8H2L:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-08-05T16:32:28.9038842+07:00 0HM1P499P8H2L:00000002 [INF] User logged in. (fdce0db4)
+2020-08-05T16:32:28.9241910+07:00 0HM1P499P8H2L:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:32:29.0200120+07:00 0HM1P499P8H2L:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 575.3583ms (afa2e885)
+2020-08-05T16:32:29.0371560+07:00 0HM1P499P8H2L:00000002 [INF] Request finished in 631.8874ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:32:29.0448917+07:00 0HM1P499P8H2K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/Index   (ca22a1cb)
+2020-08-05T16:32:29.0578167+07:00 0HM1P499P8H2K:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:32:29.0634698+07:00 0HM1P499P8H2K:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:29.2105902+07:00 0HM1P499P8H2K:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:32:29.3702232+07:00 0HM1P499P8H2K:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:32:29.3835051+07:00 0HM1P499P8H2K:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:32:29.7009996+07:00 0HM1P499P8H2K:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" in 637.9046ms (afa2e885)
+2020-08-05T16:32:29.7604742+07:00 0HM1P499P8H2K:00000003 [INF] Request finished in 717.0541ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:32:29.9102032+07:00 0HM1P499P8H2I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/GetRevenue   (ca22a1cb)
+2020-08-05T16:32:29.9154980+07:00 0HM1P499P8H2I:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:32:29.9226047+07:00 0HM1P499P8H2I:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.GetRevenue (StdCoreApp)" with arguments (["", ""]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:30.1144839+07:00 0HM1P499P8H2I:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:32:30.1257483+07:00 0HM1P499P8H2I:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.GetRevenue (StdCoreApp)" in 203.7628ms (afa2e885)
+2020-08-05T16:32:30.1328180+07:00 0HM1P499P8H2I:00000004 [INF] Request finished in 219.189ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:32:51.5047086+07:00 0HM1P499P8H2J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:32:51.5075539+07:00 0HM1P499P8H2J:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:32:51.5121563+07:00 0HM1P499P8H2J:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:32:51.6119981+07:00 0HM1P499P8H2J:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:32:51.6189126+07:00 0HM1P499P8H2J:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 107.6327ms (afa2e885)
+2020-08-05T16:32:51.6227073+07:00 0HM1P499P8H2J:00000004 [INF] Request finished in 119.2239ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:45:56.6912946+07:00  [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:45:57.1202002+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.1621493+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.1684795+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.1825470+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-08-05T16:45:57.2361356+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-08-05T16:45:57.2408554+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-08-05T16:45:57.2458167+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-08-05T16:45:57.2509613+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-08-05T16:45:57.2559691+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-08-05T16:45:57.2607443+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-08-05T16:45:57.2664504+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.2724980+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.2775613+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:45:57.7838552+07:00 0HM1P4HDB3VSS:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50039/  0 (ca22a1cb)
+2020-08-05T16:45:57.7844808+07:00 0HM1P4HDB3VSR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2020-08-05T16:45:57.8500116+07:00 0HM1P4HDB3VSS:00000001 [INF] Request finished in 106.0106ms 200  (791a596a)
+2020-08-05T16:45:57.9529178+07:00 0HM1P4HDB3VSR:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:45:58.2337878+07:00 0HM1P4HDB3VSR:00000001 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:45:58.2507770+07:00 0HM1P4HDB3VSR:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:45:58.3360286+07:00 0HM1P4HDB3VSR:00000001 [WRN] The Include operation for navigation '"[c].Products"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2020-08-05T16:45:58.4302560+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2020-08-05T16:45:58.4939902+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:45:58.5124453+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:45:58.5365247+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:45:58.5429603+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:45:58.5469486+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:45:58.5507834+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:45:58.5547110+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:45:58.5698671+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2020-08-05T16:45:58.5757399+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[BlogId], [dto].[TagId]
+FROM [BlogTags] AS [dto]
+WHERE @_outer_Id = [dto].[BlogId]" (0723d8ff)
+2020-08-05T16:45:58.5886081+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2020-08-05T16:46:02.4496567+07:00 0HM1P4HDB3VSR:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:46:02.9072942+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:46:02.9129296+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:02.9160105+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:02.9201018+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:02.9231304+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:03.8755684+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:46:03.8788176+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:03.8825585+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:03.8863542+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:03.8901393+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.0150859+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:46:04.0190041+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.0224518+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.0254610+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.0285380+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.2563154+07:00 0HM1P4HDB3VSR:00000001 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 6053.5052ms (afa2e885)
+2020-08-05T16:46:04.5303895+07:00 0HM1P4HDB3VSR:00000001 [INF] Request finished in 6790.112ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:46:04.5618720+07:00 0HM1P4HDB3VSS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/client-side/images/products/product-1.jpg?w=190   (ca22a1cb)
+2020-08-05T16:46:04.5742371+07:00 0HM1P4HDB3VSS:00000002 [INF] Resizing /client-side/images/products/product-1.jpg with params w: 190, h: 0, autorotate: False, quality: 100, format: jpg, mode: max (d9bba74d)
+2020-08-05T16:46:04.6221657+07:00 0HM1P4HDB3VSS:00000002 [INF] Request finished in 58.7513ms 200 image/jpeg (791a596a)
+2020-08-05T16:46:04.7224638+07:00 0HM1P4HDB3VSR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/   (ca22a1cb)
+2020-08-05T16:46:04.7299256+07:00 0HM1P4HDB3VSR:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:46:04.7434074+07:00 0HM1P4HDB3VSR:00000002 [INF] Executing action method "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:46:04.7482016+07:00 0HM1P4HDB3VSR:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:46:04.7540676+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2020-08-05T16:46:04.7649897+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:46:04.7768092+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2020-08-05T16:46:04.7910333+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.7947951+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8025778+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8089771+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8157348+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8250287+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2020-08-05T16:46:04.8354934+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[BlogId], [dto].[TagId]
+FROM [BlogTags] AS [dto]
+WHERE @_outer_Id = [dto].[BlogId]" (0723d8ff)
+2020-08-05T16:46:04.8399296+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2020-08-05T16:46:04.8444670+07:00 0HM1P4HDB3VSR:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:46:04.8498081+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:46:04.8539380+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8580086+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8622528+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8653616+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8718944+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:46:04.8763628+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8795493+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8824654+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8855047+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2020-08-05T16:46:04.8890654+07:00 0HM1P4HDB3VSR:00000002 [INF] Executed action "StdCoreApp.Controllers.HomeController.Index (StdCoreApp)" in 154.7507ms (afa2e885)
+2020-08-05T16:46:04.9012894+07:00 0HM1P4HDB3VSR:00000002 [INF] Request finished in 177.2961ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:05.2468008+07:00 0HM1P4HDB3VST:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2020-08-05T16:47:05.2516598+07:00 0HM1P4HDB3VST:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:05.2827149+07:00 0HM1P4HDB3VST:00000001 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:05.5015408+07:00 0HM1P4HDB3VST:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-08-05T16:47:05.5324325+07:00 0HM1P4HDB3VST:00000001 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 249.4951ms (afa2e885)
+2020-08-05T16:47:05.5398968+07:00 0HM1P4HDB3VST:00000001 [INF] Request finished in 292.4356ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:06.3146710+07:00 0HM1P4HDB3VST:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin   (ca22a1cb)
+2020-08-05T16:47:06.3194748+07:00 0HM1P4HDB3VST:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:06.3245146+07:00 0HM1P4HDB3VST:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:06.3291663+07:00 0HM1P4HDB3VST:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-08-05T16:47:06.3338963+07:00 0HM1P4HDB3VST:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Index (StdCoreApp)" in 9.9288ms (afa2e885)
+2020-08-05T16:47:06.3420749+07:00 0HM1P4HDB3VST:00000002 [INF] Request finished in 25.7295ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:13.2733499+07:00 0HM1P4HDB3VST:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44311/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2020-08-05T16:47:13.2766506+07:00 0HM1P4HDB3VST:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:13.4098825+07:00 0HM1P4HDB3VST:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" with arguments (["StdCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:13.4197801+07:00 0HM1P4HDB3VST:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:13.4910939+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("14"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-08-05T16:47:13.6762040+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-08-05T16:47:13.7103478+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-08-05T16:47:13.7241966+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-08-05T16:47:13.7442403+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-08-05T16:47:13.7514266+07:00 0HM1P4HDB3VST:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-08-05T16:47:13.7837823+07:00 0HM1P4HDB3VST:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-08-05T16:47:13.7893375+07:00 0HM1P4HDB3VST:00000003 [INF] User logged in. (fdce0db4)
+2020-08-05T16:47:13.8109692+07:00 0HM1P4HDB3VST:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:13.9111191+07:00 0HM1P4HDB3VST:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.LoginController.Authen (StdCoreApp)" in 596.9365ms (afa2e885)
+2020-08-05T16:47:13.9320468+07:00 0HM1P4HDB3VST:00000003 [INF] Request finished in 654.996ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:47:13.9402144+07:00 0HM1P4HDB3VST:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/Index   (ca22a1cb)
+2020-08-05T16:47:13.9623833+07:00 0HM1P4HDB3VST:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:13.9671936+07:00 0HM1P4HDB3VST:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:14.0917453+07:00 0HM1P4HDB3VST:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-08-05T16:47:14.2536734+07:00 0HM1P4HDB3VST:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:14.2671336+07:00 0HM1P4HDB3VST:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:14.5082374+07:00 0HM1P4HDB3VST:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.Index (StdCoreApp)" in 541.2034ms (afa2e885)
+2020-08-05T16:47:14.5708653+07:00 0HM1P4HDB3VST:00000004 [INF] Request finished in 629.1592ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:14.7141788+07:00 0HM1P4HDB3VST:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Home/GetRevenue   (ca22a1cb)
+2020-08-05T16:47:14.7174829+07:00 0HM1P4HDB3VST:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:14.7248392+07:00 0HM1P4HDB3VST:00000005 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.HomeController.GetRevenue (StdCoreApp)" with arguments (["", ""]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:14.9115871+07:00 0HM1P4HDB3VST:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:14.9242449+07:00 0HM1P4HDB3VST:00000005 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.HomeController.GetRevenue (StdCoreApp)" in 199.6097ms (afa2e885)
+2020-08-05T16:47:14.9283710+07:00 0HM1P4HDB3VST:00000005 [INF] Request finished in 214.7409ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:47:19.9228090+07:00 0HM1P4HDB3VST:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:47:19.9263779+07:00 0HM1P4HDB3VST:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:19.9303132+07:00 0HM1P4HDB3VST:00000006 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:20.0285627+07:00 0HM1P4HDB3VST:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:47:20.1347255+07:00 0HM1P4HDB3VST:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:20.1401696+07:00 0HM1P4HDB3VST:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:20.1482304+07:00 0HM1P4HDB3VST:00000006 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 217.5921ms (afa2e885)
+2020-08-05T16:47:20.1576168+07:00 0HM1P4HDB3VST:00000006 [INF] Request finished in 236.1183ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:20.1777711+07:00 0HM1P4HDB3VST:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/function/index.js?v=xme0I8q0MAf-0bEtmy7AyPsNfWvuXsjdkwXWcvKQH28   (ca22a1cb)
+2020-08-05T16:47:20.1931690+07:00 0HM1P4HDB3VST:00000007 [INF] Sending file. Request path: '"/app/controllers/function/index.js"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\app\controllers\function\index.js"' (27b0a520)
+2020-08-05T16:47:20.2081092+07:00 0HM1P4HDB3VST:00000007 [INF] Request finished in 30.4739ms 200 application/javascript (791a596a)
+2020-08-05T16:47:20.2437306+07:00 0HM1P4HDB3VST:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:47:20.2476971+07:00 0HM1P4HDB3VST:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:20.2549515+07:00 0HM1P4HDB3VST:00000008 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:20.2601355+07:00 0HM1P4HDB3VST:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:20.2659182+07:00 0HM1P4HDB3VST:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:20.2736204+07:00 0HM1P4HDB3VST:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:20.2838043+07:00 0HM1P4HDB3VST:00000008 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 29.3456ms (afa2e885)
+2020-08-05T16:47:20.2909145+07:00 0HM1P4HDB3VST:00000008 [INF] Request finished in 43.9408ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:47:34.0391691+07:00 0HM1P4HDB3VST:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:47:34.0419700+07:00 0HM1P4HDB3VST:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:34.0445127+07:00 0HM1P4HDB3VST:00000009 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:34.0469961+07:00 0HM1P4HDB3VST:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:47:34.0499675+07:00 0HM1P4HDB3VST:00000009 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:34.0544026+07:00 0HM1P4HDB3VST:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:34.0581248+07:00 0HM1P4HDB3VST:00000009 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 13.3176ms (afa2e885)
+2020-08-05T16:47:34.0665782+07:00 0HM1P4HDB3VST:00000009 [INF] Request finished in 27.0749ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:34.2090778+07:00 0HM1P4HDB3VST:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:47:34.2127191+07:00 0HM1P4HDB3VST:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:34.2195677+07:00 0HM1P4HDB3VST:0000000A [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:34.2242140+07:00 0HM1P4HDB3VST:0000000A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:34.2329472+07:00 0HM1P4HDB3VST:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:34.2391014+07:00 0HM1P4HDB3VST:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:34.2450491+07:00 0HM1P4HDB3VST:0000000A [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 25.6283ms (afa2e885)
+2020-08-05T16:47:34.2518782+07:00 0HM1P4HDB3VST:0000000A [INF] Request finished in 41.5168ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:47:35.3973938+07:00 0HM1P4HDB3VST:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:47:35.4006736+07:00 0HM1P4HDB3VST:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:35.4040313+07:00 0HM1P4HDB3VST:0000000B [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:35.4067154+07:00 0HM1P4HDB3VST:0000000B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:47:35.4099095+07:00 0HM1P4HDB3VST:0000000B [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:35.4153057+07:00 0HM1P4HDB3VST:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:35.4193651+07:00 0HM1P4HDB3VST:0000000B [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 15.3023ms (afa2e885)
+2020-08-05T16:47:35.4289020+07:00 0HM1P4HDB3VST:0000000B [INF] Request finished in 30.1953ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:35.5742818+07:00 0HM1P4HDB3VST:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:47:35.5786786+07:00 0HM1P4HDB3VST:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:35.5835718+07:00 0HM1P4HDB3VST:0000000C [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:35.5889912+07:00 0HM1P4HDB3VST:0000000C [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:35.5966035+07:00 0HM1P4HDB3VST:0000000C [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:35.6041960+07:00 0HM1P4HDB3VST:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:35.6123180+07:00 0HM1P4HDB3VST:0000000C [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 25.2572ms (afa2e885)
+2020-08-05T16:47:35.6176907+07:00 0HM1P4HDB3VST:0000000C [INF] Request finished in 43.797ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:47:36.5383087+07:00 0HM1P4HDB3VST:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:47:36.5416052+07:00 0HM1P4HDB3VST:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:36.5441047+07:00 0HM1P4HDB3VST:0000000D [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:36.5465047+07:00 0HM1P4HDB3VST:0000000D [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:47:36.5516122+07:00 0HM1P4HDB3VST:0000000D [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:36.5575748+07:00 0HM1P4HDB3VST:0000000D [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:36.5613740+07:00 0HM1P4HDB3VST:0000000D [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 16.5537ms (afa2e885)
+2020-08-05T16:47:36.5724215+07:00 0HM1P4HDB3VST:0000000D [INF] Request finished in 32.6402ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:47:36.6732182+07:00 0HM1P4HDB3VST:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:47:36.6763969+07:00 0HM1P4HDB3VST:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:47:36.6797487+07:00 0HM1P4HDB3VST:0000000E [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:47:36.6831653+07:00 0HM1P4HDB3VST:0000000E [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:47:36.6897290+07:00 0HM1P4HDB3VST:0000000E [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:47:36.6929216+07:00 0HM1P4HDB3VST:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:47:36.6959301+07:00 0HM1P4HDB3VST:0000000E [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 16.4822ms (afa2e885)
+2020-08-05T16:47:36.7030460+07:00 0HM1P4HDB3VST:0000000E [INF] Request finished in 27.0024ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:48:46.9039835+07:00 0HM1P4HDB3VSU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:48:46.9065922+07:00 0HM1P4HDB3VSU:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:48:46.9089164+07:00 0HM1P4HDB3VSU:00000001 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:48:47.0145102+07:00 0HM1P4HDB3VSU:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:48:47.0242521+07:00 0HM1P4HDB3VSU:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:48:47.0297131+07:00 0HM1P4HDB3VSU:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:48:47.0373191+07:00 0HM1P4HDB3VSU:00000001 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 126.1894ms (afa2e885)
+2020-08-05T16:48:47.0468064+07:00 0HM1P4HDB3VSU:00000001 [INF] Request finished in 141.54ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:48:47.0639207+07:00 0HM1P4HDB3VSU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/function/index.js?v=xme0I8q0MAf-0bEtmy7AyPsNfWvuXsjdkwXWcvKQH28   (ca22a1cb)
+2020-08-05T16:48:47.0729214+07:00 0HM1P4HDB3VSU:00000002 [INF] The file "/app/controllers/function/index.js" was not modified (f1f8d725)
+2020-08-05T16:48:47.0788942+07:00 0HM1P4HDB3VSU:00000002 [INF] Request finished in 16.1978ms 304 application/javascript (791a596a)
+2020-08-05T16:48:47.1946315+07:00 0HM1P4HDB3VSU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:48:47.1990118+07:00 0HM1P4HDB3VSU:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:48:47.2030080+07:00 0HM1P4HDB3VSU:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:48:47.2064684+07:00 0HM1P4HDB3VSU:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:48:47.2151187+07:00 0HM1P4HDB3VSU:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:48:47.2195933+07:00 0HM1P4HDB3VSU:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:48:47.2232840+07:00 0HM1P4HDB3VSU:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 20.6191ms (afa2e885)
+2020-08-05T16:48:47.2318956+07:00 0HM1P4HDB3VSU:00000003 [INF] Request finished in 37.9827ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:48:54.0047614+07:00 0HM1P4HDB3VSU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:48:54.0074992+07:00 0HM1P4HDB3VSU:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:48:54.0100883+07:00 0HM1P4HDB3VSU:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:48:54.0127643+07:00 0HM1P4HDB3VSU:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:48:54.0169015+07:00 0HM1P4HDB3VSU:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:48:54.0198776+07:00 0HM1P4HDB3VSU:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:48:54.0224224+07:00 0HM1P4HDB3VSU:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 12.4216ms (afa2e885)
+2020-08-05T16:48:54.0255289+07:00 0HM1P4HDB3VSU:00000004 [INF] Request finished in 21.1134ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:48:54.0390580+07:00 0HM1P4HDB3VSU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png   (ca22a1cb)
+2020-08-05T16:48:54.0429711+07:00 0HM1P4HDB3VSU:00000005 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\combo_arrow.png"' (27b0a520)
+2020-08-05T16:48:54.0487951+07:00 0HM1P4HDB3VSU:00000005 [INF] Request finished in 8.6119ms 200 image/png (791a596a)
+2020-08-05T16:50:10.2153314+07:00 0HM1P4HDB3VSV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetById?id=FEEDBACK   (ca22a1cb)
+2020-08-05T16:50:10.2180569+07:00 0HM1P4HDB3VSV:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:50:10.2222193+07:00 0HM1P4HDB3VSV:00000001 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetById (StdCoreApp)" with arguments (["FEEDBACK"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:50:10.2250478+07:00 0HM1P4HDB3VSV:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:50:10.2332351+07:00 0HM1P4HDB3VSV:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:50:10.2358160+07:00 0HM1P4HDB3VSV:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__filter_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE ([x].[Status] = 1) AND ((CHARINDEX(@__filter_0, [x].[Name]) > 0) OR (@__filter_0 = N''))
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:50:10.2610002+07:00 0HM1P4HDB3VSV:00000001 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetById (StdCoreApp)" in 38.9567ms (afa2e885)
+2020-08-05T16:50:10.7660471+07:00 0HM1P4HDB3VSV:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Task' with type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[StdCoreApp.Application.ViewModels.System.FunctionViewModel],System.Linq.AsyncEnumerable+<Aggregate_>d__6`3[StdCoreApp.Application.ViewModels.System.FunctionViewModel,System.Collections.Generic.List`1[StdCoreApp.Application.ViewModels.System.FunctionViewModel],System.Collections.Generic.List`1[StdCoreApp.Application.ViewModels.System.FunctionViewModel]]]'. Path 'StateMachine.<>t__builder'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebMarkupMin.AspNetCore2.WebMarkupMinMiddleware.Invoke(HttpContext context)
+   at StdCoreApp.Middleware.ImageResizerMiddleware.Invoke(HttpContext context) in G:\AAA\StdCoreApp\StdCoreApp\Middleware\ImageResizerMiddleware.cs:line 78
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-05T16:50:10.8542252+07:00 0HM1P4HDB3VSV:00000001 [INF] Request finished in 638.723ms 500 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:50:42.9089437+07:00 0HM1P4HDB3VSV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/function/index   (ca22a1cb)
+2020-08-05T16:50:42.9121771+07:00 0HM1P4HDB3VSV:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:50:42.9220394+07:00 0HM1P4HDB3VSV:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:50:43.0360083+07:00 0HM1P4HDB3VSV:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Function/Index.cshtml". (9707eebe)
+2020-08-05T16:50:43.0461387+07:00 0HM1P4HDB3VSV:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:50:43.0519863+07:00 0HM1P4HDB3VSV:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:50:43.0590613+07:00 0HM1P4HDB3VSV:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.Index (StdCoreApp)" in 143.1318ms (afa2e885)
+2020-08-05T16:50:43.0672192+07:00 0HM1P4HDB3VSV:00000002 [INF] Request finished in 161.6485ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:50:43.0827873+07:00 0HM1P4HDB3VSV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/function/index.js?v=xme0I8q0MAf-0bEtmy7AyPsNfWvuXsjdkwXWcvKQH28   (ca22a1cb)
+2020-08-05T16:50:43.0861921+07:00 0HM1P4HDB3VSV:00000003 [INF] The file "/app/controllers/function/index.js" was not modified (f1f8d725)
+2020-08-05T16:50:43.0923203+07:00 0HM1P4HDB3VSV:00000003 [INF] Request finished in 7.0603ms 304 application/javascript (791a596a)
+2020-08-05T16:50:43.1355121+07:00 0HM1P4HDB3VSV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/Admin/Function/GetAll   (ca22a1cb)
+2020-08-05T16:50:43.1391627+07:00 0HM1P4HDB3VSV:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:50:43.1425057+07:00 0HM1P4HDB3VSV:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:50:43.1460223+07:00 0HM1P4HDB3VSV:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:50:43.1511860+07:00 0HM1P4HDB3VSV:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:50:43.1551707+07:00 0HM1P4HDB3VSV:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:50:43.1587396+07:00 0HM1P4HDB3VSV:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (StdCoreApp)" in 15.9805ms (afa2e885)
+2020-08-05T16:50:43.1631630+07:00 0HM1P4HDB3VSV:00000004 [INF] Request finished in 26.7871ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:54:04.4910369+07:00 0HM1P4HDB3VT0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/user/index   (ca22a1cb)
+2020-08-05T16:54:04.4945689+07:00 0HM1P4HDB3VT0:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:04.5021489+07:00 0HM1P4HDB3VT0:00000001 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.UserController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:04.5191475+07:00 0HM1P4HDB3VT0:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:04.5569175+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__functionId_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanRead] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:54:04.5773404+07:00 0HM1P4HDB3VT0:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-08-05T16:54:04.6956174+07:00 0HM1P4HDB3VT0:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2020-08-05T16:54:04.7120418+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__functionId_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanCreate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:54:04.7159080+07:00 0HM1P4HDB3VT0:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-08-05T16:54:04.7330507+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__functionId_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanUpdate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:54:04.7360728+07:00 0HM1P4HDB3VT0:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-08-05T16:54:04.7471004+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__functionId_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanDelete] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-08-05T16:54:04.7506575+07:00 0HM1P4HDB3VT0:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-08-05T16:54:04.8559484+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:54:04.8639390+07:00 0HM1P4HDB3VT0:00000001 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.UserController.Index (StdCoreApp)" in 363.1383ms (afa2e885)
+2020-08-05T16:54:04.8731907+07:00 0HM1P4HDB3VT0:00000001 [INF] Request finished in 381.3623ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:54:04.8875498+07:00 0HM1P4HDB3VT0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/user/index.js?v=HLreW8buuFaITEikAJeub_uGJFjryFOJubTvjtvVguI   (ca22a1cb)
+2020-08-05T16:54:04.8917031+07:00 0HM1P4HDB3VT0:00000002 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2020-08-05T16:54:04.8953055+07:00 0HM1P4HDB3VT0:00000002 [INF] Request finished in 8.5854ms 200 application/javascript (791a596a)
+2020-08-05T16:54:04.9298551+07:00 0HM1P4HDB3VT0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-08-05T16:54:04.9336611+07:00 0HM1P4HDB3VT0:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:04.9418260+07:00 0HM1P4HDB3VT0:00000003 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (StdCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:04.9483312+07:00 0HM1P4HDB3VT0:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:04.9556888+07:00 0HM1P4HDB3VT0:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2020-08-05T16:54:04.9641580+07:00 0HM1P4HDB3VT0:00000003 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2020-08-05T16:54:04.9772521+07:00 0HM1P4HDB3VT0:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-08-05T16:54:04.9834372+07:00 0HM1P4HDB3VT0:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:54:04.9999184+07:00 0HM1P4HDB3VT0:00000003 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (StdCoreApp)" in 61.0268ms (afa2e885)
+2020-08-05T16:54:05.0047028+07:00 0HM1P4HDB3VT0:00000003 [INF] Request finished in 74.2905ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:54:05.0147808+07:00 0HM1P4HDB3VT0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/user/null   (ca22a1cb)
+2020-08-05T16:54:05.0201345+07:00 0HM1P4HDB3VT1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-08-05T16:54:05.0209151+07:00 0HM1P4HDB3VT0:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:05.0279488+07:00 0HM1P4HDB3VT1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:05.0290956+07:00 0HM1P4HDB3VT0:00000004 [INF] Request finished in 12.1453ms 404  (791a596a)
+2020-08-05T16:54:05.0336493+07:00 0HM1P4HDB3VT1:00000001 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (StdCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:05.0363743+07:00 0HM1P4HDB3VT1:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:05.0398947+07:00 0HM1P4HDB3VT1:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2020-08-05T16:54:05.0445094+07:00 0HM1P4HDB3VT1:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-08-05T16:54:05.0469247+07:00 0HM1P4HDB3VT1:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:54:05.0493731+07:00 0HM1P4HDB3VT1:00000001 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (StdCoreApp)" in 18.4315ms (afa2e885)
+2020-08-05T16:54:05.0537638+07:00 0HM1P4HDB3VT1:00000001 [INF] Request finished in 34.6332ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:54:05.0587575+07:00 0HM1P4HDB3VT0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/user/null   (ca22a1cb)
+2020-08-05T16:54:05.0631423+07:00 0HM1P4HDB3VT0:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:05.0663077+07:00 0HM1P4HDB3VT0:00000005 [INF] Request finished in 8.0367ms 404  (791a596a)
+2020-08-05T16:54:14.7417842+07:00 0HM1P4HDB3VT1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/setting/index   (ca22a1cb)
+2020-08-05T16:54:14.7448728+07:00 0HM1P4HDB3VT1:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:14.7485969+07:00 0HM1P4HDB3VT1:00000002 [INF] Request finished in 8.2072ms 404  (791a596a)
+2020-08-05T16:54:17.8093014+07:00 0HM1P4HDB3VT0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/role/index   (ca22a1cb)
+2020-08-05T16:54:17.8123744+07:00 0HM1P4HDB3VT0:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:17.8159465+07:00 0HM1P4HDB3VT0:00000006 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.RoleController.Index (StdCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:17.9191336+07:00 0HM1P4HDB3VT0:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2020-08-05T16:54:18.1270576+07:00 0HM1P4HDB3VT0:00000006 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:18.1322468+07:00 0HM1P4HDB3VT0:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2020-08-05T16:54:18.1401977+07:00 0HM1P4HDB3VT0:00000006 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.RoleController.Index (StdCoreApp)" in 323.5955ms (afa2e885)
+2020-08-05T16:54:18.1508334+07:00 0HM1P4HDB3VT0:00000006 [INF] Request finished in 340.5975ms 200 text/html; charset=utf-8 (791a596a)
+2020-08-05T16:54:18.1721401+07:00 0HM1P4HDB3VT1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-treegrid/css/jquery.treegrid.css   (ca22a1cb)
+2020-08-05T16:54:18.1734874+07:00 0HM1P4HDB3VT0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44311/lib/jquery-treegrid/js/jquery.treegrid.js   (ca22a1cb)
+2020-08-05T16:54:18.1797563+07:00 0HM1P4HDB3VT2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44311/app/controllers/role/index.js?v=zWrfFqWy4WQJE6dHIvvVSR1S6yhRsL56hsoGacMp2Rs   (ca22a1cb)
+2020-08-05T16:54:18.1807239+07:00 0HM1P4HDB3VT0:00000007 [INF] Sending file. Request path: '"/lib/jquery-treegrid/js/jquery.treegrid.js"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\lib\jquery-treegrid\js\jquery.treegrid.js"' (27b0a520)
+2020-08-05T16:54:18.1879764+07:00 0HM1P4HDB3VT1:00000003 [INF] Sending file. Request path: '"/lib/jquery-treegrid/css/jquery.treegrid.css"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\lib\jquery-treegrid\css\jquery.treegrid.css"' (27b0a520)
+2020-08-05T16:54:18.1896759+07:00 0HM1P4HDB3VT2:00000001 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"G:\AAA\StdCoreApp\StdCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2020-08-05T16:54:18.1993201+07:00 0HM1P4HDB3VT0:00000007 [INF] Request finished in 21.6573ms 200 application/javascript (791a596a)
+2020-08-05T16:54:18.2060198+07:00 0HM1P4HDB3VT2:00000001 [INF] Request finished in 23.8045ms 200 application/javascript (791a596a)
+2020-08-05T16:54:18.2086325+07:00 0HM1P4HDB3VT1:00000003 [INF] Request finished in 27.368ms 200 text/css (791a596a)
+2020-08-05T16:54:18.2369815+07:00 0HM1P4HDB3VT1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-08-05T16:54:18.2410249+07:00 0HM1P4HDB3VT1:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:18.2458543+07:00 0HM1P4HDB3VT1:00000004 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (StdCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:18.2537341+07:00 0HM1P4HDB3VT1:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:18.2596272+07:00 0HM1P4HDB3VT1:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2020-08-05T16:54:18.2649675+07:00 0HM1P4HDB3VT1:00000004 [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2020-08-05T16:54:18.2732251+07:00 0HM1P4HDB3VT1:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-08-05T16:54:18.2772981+07:00 0HM1P4HDB3VT1:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:54:18.2840851+07:00 0HM1P4HDB3VT1:00000004 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (StdCoreApp)" in 38.92ms (afa2e885)
+2020-08-05T16:54:18.2879137+07:00 0HM1P4HDB3VT1:00000004 [INF] Request finished in 51.0053ms 200 application/json; charset=utf-8 (791a596a)
+2020-08-05T16:54:18.2948634+07:00 0HM1P4HDB3VT2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44311/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2020-08-05T16:54:18.2986028+07:00 0HM1P4HDB3VT2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-08-05T16:54:18.3017106+07:00 0HM1P4HDB3VT2:00000002 [INF] Executing action method "StdCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (StdCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2020-08-05T16:54:18.3044363+07:00 0HM1P4HDB3VT2:00000002 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=StdCoreApp.Data.EF " (9958f5bb)
+2020-08-05T16:54:18.3084925+07:00 0HM1P4HDB3VT2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2020-08-05T16:54:18.3120409+07:00 0HM1P4HDB3VT2:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2020-08-05T16:54:18.3146210+07:00 0HM1P4HDB3VT2:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-08-05T16:54:18.3177656+07:00 0HM1P4HDB3VT2:00000002 [INF] Executed action "StdCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (StdCoreApp)" in 15.9814ms (afa2e885)
+2020-08-05T16:54:18.3219186+07:00 0HM1P4HDB3VT2:00000002 [INF] Request finished in 26.0543ms 200 application/json; charset=utf-8 (791a596a)

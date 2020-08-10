@@ -4,7 +4,7 @@ using StdCoreApp.Application.Interfaces;
 
 namespace StdCoreApp.WebApi.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ProductController : ApiController
     {
         private IProductCategoryService _productCategoryService;

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StdCoreApp.Application.Interfaces;
+using System.Linq;
 
 namespace StdCoreApp.Controllers
 {
@@ -15,7 +16,7 @@ namespace StdCoreApp.Controllers
         [Route("blog.html", Name = "Blog")]
         public IActionResult Index(string alias)
         {
-            var Blog = _blogService.GetByAlias(alias);
+            var Blog = _blogService.GetAll().FirstOrDefault(); //_blogService.GetByAlias(alias);
             return View(Blog);
         }
     }
